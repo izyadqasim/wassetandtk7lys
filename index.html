@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>شركة الرؤية للتخليص الجمركي</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Tahoma', sans-serif;
+    }
+
+    body {
+      background-color: #f4f6f8;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    header {
+      background-color: #003366;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 2.5em;
+    }
+
+    nav {
+      background: #005599;
+      padding: 10px;
+      display: flex;
+      justify-content: center;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    .hero {
+      background-image: url('https://images.unsplash.com/photo-1577473406645-5fbd7f8e50ed');
+      background-size: cover;
+      background-position: center;
+      height: 400px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+
+    .hero h2 {
+      font-size: 2.5em;
+      background: rgba(0,0,0,0.5);
+      padding: 20px;
+      border-radius: 10px;
+    }
+
+    .section {
+      padding: 40px 20px;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    .section h3 {
+      margin-bottom: 20px;
+      color: #005599;
+      font-size: 1.8em;
+    }
+
+    .services {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .service {
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      transition: transform 0.3s;
+    }
+
+    .service:hover {
+      transform: translateY(-5px);
+    }
+
+    footer {
+      background-color: #003366;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+
+    .whatsapp-float {
+      position: fixed;
+      left: 20px;
+      bottom: 20px;
+      background-color: #25D366;
+      color: white;
+      border-radius: 50%;
+      width: 60px;
+      height: 60px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 30px;
+      text-decoration: none;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+      z-index: 1000;
+      animation: pulse 1.5s infinite;
+    }
+
+    @keyframes pulse {
+      0% { transform: scale(1); }
+      50% { transform: scale(1.1); }
+      100% { transform: scale(1); }
+    }
+  </style>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+  <header>
+    <h1>شركة الرؤية للتخليص الجمركي</h1>
+  </header>
+
+  <nav>
+    <a href="#services">خدماتنا</a>
+    <a href="#about">من نحن</a>
+    <a href="#contact">اتصل بنا</a>
+  </nav>
+
+  <div class="hero">
+    <h2>نحن نُسهل مرور بضائعك بكل احترافية وسرعة</h2>
+  </div>
+
+  <div class="section" id="services">
+    <h3>خدماتنا</h3>
+    <div class="services">
+      <div class="service">
+        <h4>تخليص شحنات بحرية</h4>
+        <p>نوفر خدمات تخليص كاملة للشحنات القادمة عبر الموانئ بأعلى كفاءة.</p>
+      </div>
+      <div class="service">
+        <h4>تخليص شحنات برية</h4>
+        <p>نتعامل مع المنافذ البرية بسرعة لضمان وصول شحنتك دون تأخير.</p>
+      </div>
+      <div class="service">
+        <h4>إجراءات الفسح الجمركي</h4>
+        <p>نتابع الإجراءات الحكومية والجمركية لتسريع عمليات الفسح.</p>
+      </div>
+      <div class="service">
+        <h4>خدمة العملاء والدعم</h4>
+        <p>فريق دعم محترف للإجابة على جميع استفساراتك وتقديم الحلول.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="section" id="about">
+    <h3>من نحن</h3>
+    <p>شركة سعودية مرخصة متخصصة في التخليص الجمركي منذ أكثر من 10 سنوات، نقدم حلولاً شاملة وذكية لتسهيل عبور البضائع بكل ثقة.</p>
+  </div>
+
+  <div class="section" id="contact">
+    <h3>اتصل بنا</h3>
+    <p>📍 العنوان: الرياض - شارع الملك عبدالعزيز<br>
+    ☎️ الهاتف: 0500000000<br>
+    📧 البريد الإلكتروني: info@customs-sa.com</p>
+  </div>
+
+  <a href="https://wa.me/966509127061" class="whatsapp-float" target="_blank">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+
+  <footer>
+    <p>جميع الحقوق محفوظة &copy; 2025 شركة الرؤية للتخليص الجمركي</p>
+  </footer>
+</body>
+</html>
